@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
+    "axios": "^1.8.4",
+    "motion": "^12.6.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^7.4.0",
     "tailwindcss": "^4.0.17"
   },
