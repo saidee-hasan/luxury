@@ -1,98 +1,62 @@
-# Car Doctor - Vehicle Service Management System
+# Luxury
 
-![Car Doctor Logo](assets/logo.png)
+![Luxury Banner](https://luxury-site.netlify.app/your-banner-image.png)
 
-Car Doctor is a powerful vehicle service management system designed to streamline service bookings, maintenance tracking, and customer communications effectively. The platform includes dedicated user and admin interfaces to manage vehicle service requests efficiently.
+Luxury is a premium online platform for showcasing and selling high-end products and services with a focus on elegance and quality. Visit the live site here: [Luxury](https://luxury-site.netlify.app/)
 
 ## 🚀 Features
 
-* **User Authentication and Authorization (JWT):** Secure login and registration.
-* **Service Booking and Tracking:** Book service appointments and monitor progress.
-* **Vehicle Maintenance History:** View past service records and maintenance logs.
-* **Admin Dashboard:** Manage users, services, and appointments.
-* **Responsive UI:** Fully optimized for mobile, tablet, and desktop screens.
-* **Payment Integration (Optional):** Integrate payment gateways for service payments.
+- 🛍️ **Premium Products** - Browse luxury items across various categories.
+- 🏆 **Exclusive Offers** - Access limited-time promotions and VIP deals.
+- 💎 **Elegant Design** - Experience a sleek, sophisticated interface.
+- 📱 **Responsive UI** - Optimized for both desktop and mobile.
+- 🛠️ **Admin Dashboard** - Manage products, orders, and users efficiently.
+- 🏅 **VIP Membership** - Unlock exclusive access to premium products and services.
 
-![Dashboard](assets/dashboard.png)
+## 📸 Screenshots
 
-## 🛠️ Technologies Used
+![Homepage Screenshot](https://luxury-site.netlify.app/homepage-screenshot.png)
+![Product Page Screenshot](https://luxury-site.netlify.app/product-page-screenshot.png)
 
-* **Frontend:** React.js, Tailwind CSS, Axios
-* **Backend:** Node.js, Express.js
-* **Database:** MongoDB
-* **Authentication:** JWT
-* **Testing:** Jest, Supertest
+## 🛠️ Installation & Setup
 
-## 📦 Installation and Setup
-
-1. **Clone the repository:**
-
+1. Clone the repository:
    ```bash
-   git clone https://github.com/saidee-hasan/car-doctor.git
-   cd car-doctor
+   git clone https://github.com/saidee-hasan/luxury.git
    ```
 
-2. **Install dependencies:**
-
+2. Navigate to the project directory:
    ```bash
-   cd client
-   npm install
-   cd ../server
+   cd luxury
+   ```
+
+3. Install dependencies:
+   ```bash
    npm install
    ```
 
-3. **Environment Configuration:**
-
-   Create a `.env` file in the `server` directory and add the following:
-
-   ```env
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   ```
-
-4. **Start the application:**
-
+4. Start the development server:
    ```bash
-   cd server
-   npm run dev
-   ```
-
-   In another terminal:
-
-   ```bash
-   cd client
    npm start
    ```
 
-![Login Page](assets/login.png)
+## ✅ Premium Features
 
-## 📚 API Endpoints
-
-* **POST /api/auth/register:** Register a new user
-* **POST /api/auth/login:** User login
-* **GET /api/services:** Fetch all services
-* **POST /api/services:** Create a new service (Admin only)
-* **PUT /api/services/\:id:** Update service details (Admin only)
-* **DELETE /api/services/\:id:** Delete a service (Admin only)
-
-![Service Management](assets/services.png)
-
-## ✅ Testing
-
-Testing is implemented using Jest and Supertest. To run tests:
-
-```bash
-cd server
-npm run test
-```
+- 🚀 **Exclusive Collections:** Access limited edition products.
+- 💼 **VIP Membership:** Get priority access to sales and events.
+- 🌐 **Luxury Community:** Connect with like-minded luxury enthusiasts.
 
 ## 📦 Deployment
 
-* **Frontend:** Vercel - [Deployment Guide](https://vercel.com/docs)
-* **Backend:** Render or Railway - [Deployment Guide](https://render.com/docs)
+- Hosted on **Netlify:** Deploy your own version by connecting the repository to Netlify.
+- Live Site: [https://luxury-site.netlify.app/](https://luxury-site.netlify.app/)
 
-## 📄 License
+## 📝 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
 
-![Thank You](assets/thank-you.png)
+## 💌 Contact
+
+For support or inquiries, email us at [support@luxury.com](mailto:support@luxury.com).
+
+---
