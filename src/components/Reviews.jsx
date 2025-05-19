@@ -32,7 +32,7 @@ export default function Reviews() {
     >
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="w-full max-w-screen-xl px-4 sm:px-8 text-black">
-          <h2 className="text-3xl font-bold text-center mb-6">What Our Customers Say</h2>
+          <h2 className="text-7xl font-bold text-center mb-6 text-red-600"> <span className='text-blue-500'> Re</span ><span className='text-green-400'>vi</span><span className='text-yellow-400'>ew</span>s</h2>
           
           {/* Carousel Component */}
           <Carousel

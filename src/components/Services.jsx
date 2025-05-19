@@ -1,24 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     title: "Roofing",
     image:
       "https://static.wixstatic.com/media/9ab881a357ec4dc3ac4264a8ab8c6ea2.jpg/v1/fill/w_864,h_299,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/9ab881a357ec4dc3ac4264a8ab8c6ea2.jpg",
-    buttonText: "View our roofing expertise",
+    buttonText: "  Explore our door options",
   },
+
   {
     title: "Siding",
     image:
       "https://static.wixstatic.com/media/a4ed88_fb431f1ca25f48e89a50a576897582ba~mv2.jpg/v1/fill/w_866,h_299,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a4ed88_fb431f1ca25f48e89a50a576897582ba~mv2.jpg",
-    buttonText: "See our exterior finishes",
+    buttonText: "  Discover our window solutions",
   },
   {
     title: "Siding",
     image:
       "https://static.wixstatic.com/media/3a5c0214d9384d24a6b55685b65eb68e.jpg/v1/fill/w_864,h_299,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3a5c0214d9384d24a6b55685b65eb68e.jpg",
-    buttonText: "See our exterior finishes",
+    buttonText: "View our roofing expertise",
   },
   {
     title: "Siding",
@@ -49,7 +51,7 @@ export default function Services() {
       {/* Dark Overlay for Readability */}
       <div className="absolute top-0 left-0 w-full h-full  bg-opacity-50"></div>
     
-      <h1 className="text-center text-4xl z-40 relative mt-5 font-bold">
+      <h1 className="text-center text-5xl z-40 relative mt-5 font-bold">
       Our Renovation Services</h1>
       {/* Content Section */}
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6 px-10 py-20 z-10">
@@ -75,22 +77,23 @@ export default function Services() {
             <div className="p-6 text-center relative">
               {/* Title Animation (Moving Upwards) */}
               <motion.h2
-                className="text-2xl font-semibold"
+                className="text-3xl font-semibold"
                 initial={{ y: 0, opacity: 1 }}
                 animate={{ y: -20, opacity: 1 }}
                 transition={{ duration: 0.6, delay: index * 0.3 }}
               >
                 {service.title}
               </motion.h2>
-
+<Link to={'/products'}>
               {/* Button Animation */}
               <motion.button
-                className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition"
+              
+                className="mt-4 bg-blue-800 cursor-pointer  text-white px-6 py-2 rounded-full hover:bg-blue-800 transition"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
                 {service.buttonText}
-              </motion.button>
+              </motion.button></Link>
             </div>
           </div>
         ))}

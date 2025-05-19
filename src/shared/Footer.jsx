@@ -1,9 +1,12 @@
 import React from 'react';
 import Logo from "../assets/logo.png";
+import NavbarBtn from './NavbarBtn';
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <div>
+      <NavbarBtn/>
       <footer className="footer sm:footer-horizontal bg-black text-white p-10 flex flex-wrap justify-between items-center">
         
         {/* Services Section */}
@@ -23,18 +26,19 @@ function Footer() {
             alt="Logo"
             width="200"
           />
-          <p className="text-lg">&copy; 2035 All Rights Reserved by</p>
-          <p className="text-sm font-semibold">Calgary Luxury Windows & Exterior</p>
-          <p className="text-sm">Designed by Nova Knights of Zenith</p>
+          <p className="text-sm">&copy; {currentYear} All Rights Reserved by</p>
+          <p className="text-xs font-semibold text-gray-500">Calgary Luxury Windows & Exterior</p>
+          <p className="text-xs font-semibold text-gray-500">Designed by Nova Knights of Zenith</p>
+          <p className="text-sm mt-2">Current date: <span className='text-xs font-semibold'> Nova Knights of Zenith</span> </p>
         </nav>
 
         {/* Working Hours Section */}
         <nav className='text-center mx-auto'>
           <h6 className="footer-title text-xl font-semibold mb-4">Working Hours</h6>
           <div>
-            <a className="link link-hover text-lg block mb-2">Mon - Fri: 8am - 8pm</a>
-            <a className="link link-hover text-lg block mb-2">Saturday: 9am - 7pm</a>
-            <a className="link link-hover text-lg block mb-2">Sunday: 9am - 8pm</a>
+            <a className="link link-hover text-md block mb-2">Mon - Fri: 8am - 8pm</a>
+            <a className="link link-hover text-md block mb-2">Saturday: 9am - 7pm</a>
+            <a className="link link-hover text-md block mb-2">Sunday: 9am - 8pm</a>
           </div>
         </nav>
 
